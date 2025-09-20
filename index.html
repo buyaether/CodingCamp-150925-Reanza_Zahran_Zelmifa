@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div class="app">
+    <div class="card">
+      <header class="card-header">
+        <h1 class="title">Todo List</h1>
+      </header>
+
+      <section class="controls">
+        <div class="input-row">
+          <input type="text" placeholder="Add a todo . . ." class="input text-input" />
+          <input type="date" class="input date-input" />
+          <button class="btn add-btn" aria-label="Add task">+</button>
+        </div>
+
+        <div class="actions-row">
+          <button class="btn outline-btn">Filter</button>
+          <button class="btn danger-btn">Delete All</button>
+        </div>
+      </section>
+
+      <section class="table-wrap">
+        <table class="todos-table" role="table">
+          <thead>
+            <tr>
+              <th>Task</th>
+              <th>Due Date</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody class="todos-list-body">
+            <tr class="empty-row">
+              <td colspan="4">No task found</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </div>
+  <footer class="footer">
+    <p>&copy; 2025 by Reanza zahran zelmifa</p>
+  </footer>
+</body>
+</html>
